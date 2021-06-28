@@ -1,0 +1,21 @@
+{
+  "name": "notes-backend",
+  "version": "0.0.1",
+  "description": "",
+  "main": "build/index.html",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:ui": "rm -rf build && cd ../notes-react/ && npm run build --prod && cp -r build ../notes-backend",
+    "deploy": "npm run build:ui"
+  },
+  "author": "Oriol Tomas",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

@@ -10,7 +10,7 @@ In the project directory, you can run:
 
 ### `npm start`
 
-It start the backend server.
+It starts the backend server. This will also show the actual frontend since the project contains a production build of our frontend.
 
 ### `npm run dev`
 
